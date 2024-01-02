@@ -12,19 +12,30 @@ const allChars = upperCase + lowerCase + number + symbol;
 
 function createPassword(){
     let password = "";
-    password += upperCase[Math.floor(Math.random()* upperCase.length)];
-    password += lowerCase[Math.floor(Math.random()* lowerCase.length)];
-    password += number[Math.floor(Math.random()* number.length)];
-    password += symbol[Math.floor(Math.random()* symbol.length)];
+    // password += upperCase[Math.floor(Math.random()* upperCase.length)];
+    // password += lowerCase[Math.floor(Math.random()* lowerCase.length)];
+    // password += number[Math.floor(Math.random()* number.length)];
+    // password += symbol[Math.floor(Math.random()* symbol.length)];
+
+    var num = 0;
+    console.log("iteration number : " , num++);
+    console.log("password(before entering loop) : " , password);
 
     while(length > password.length){
         password += allChars[Math.floor(Math.random()* allChars.length)]
+        console.log("iteration number : " , num++);
+        console.log("password : " , password);
     }
     passwordBox.value = password;
 }
 
-function copyPassword(){
-    passwordBox.select();
-    document.execCommand("copy");
-    alert("Copied!");
-}
+// function copyPassword(){
+//     passwordBox.select();
+//     document.execCommand("copy");
+//     alert("Copied!");
+// }
+
+function copyPassword() {
+    const copy = passwordBox.value;
+    navigator.clipboard.writeText(copy);
+  }
