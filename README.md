@@ -19,6 +19,10 @@ The password generator can be customized based on your preferences.
 - To include special characters in the password, check the box.
 - Click the **"Generate Password"** button to create a new random password based on your selected options.
 
+## Credits
+
+- Source : [Youtube/@GreatStackDev](https://youtu.be/Xrsb9SiF3a8?si=I_g5tslCRMonJFDm)
+
 ## License
 
 This project is licensed under the MIT License - see the `LICENSE` file for details.
