@@ -33,7 +33,7 @@ function createPassword(){
 //     passwordBox.select();
 //     document.execCommand("copy");
 //     alert("Copied!");
-// }
+// }    xc
 
 function copyPassword() {
     const copy = passwordBox.value;
